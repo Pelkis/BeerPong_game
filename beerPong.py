@@ -43,32 +43,14 @@ background_image = pygame.image.load("beerbong_game_bg_color.jpg").convert()
 pygame.display.set_caption('Beer Pong')
 
 #Ball configurations
-ball_speed_x = 5
+ball_speed_x = 25
 ball_speed_y = 0 #speedY
-ball_width = 21
-ball_height = 21
+ball_width = 17
+ball_height = 17
 play = False
 
 
 ball = pygame.Rect(100, screen_height/2 - 10.5, ball_width, ball_height)
-
-
-def draw(self,screen):
-    luku = 4
-    coord1 = (screen_width-188)
-    coord2 = (screen_height/2-74)
-    row = 0
-    for x in range(self.lines):
-        row += 40
-        for rivi in range(luku):
-            BFRC = pygame.Rect(coord1, coord2, cup_width, cup_height)
-            pygame.draw.ellipse(screen,cup_color,BFRC)
-            coord1 -= 34
-            coord2 += 20
-        luku -= 1
-        coord1 = (screen_width-188)
-        coord2 = (screen_height/2-74) + row
-
 
 while True:
     #Handle input
