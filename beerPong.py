@@ -40,7 +40,7 @@ screen_height = 720
 screen = pygame.display.set_mode(size=(screen_width, screen_height), flags=0, depth=0, display=0, vsync=0)
 pygame.display.flip()
 background_image = pygame.image.load("beerbong_game_bg_color.jpg").convert()
-pygame.display.set_caption('Beer Pong')
+pygame.display.set_caption('Asteriski Beer Pong')
 
 #Ball configurations
 ball_speed_x = 25
